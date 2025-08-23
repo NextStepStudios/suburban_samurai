@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwypq5tqjyp8b"]
-
-[ext_resource type="Texture2D" uid="uid://oqkx5pisolm3" path="res://assets/ui/heart.png" id="1_u7n8c"]
+[gd_scene format=3 uid="uid://cwypq5tqjyp8b"]
 
 [node name="Ui" type="CanvasLayer"]
 
@@ -21,5 +19,7 @@ offset_left = -40.0
 offset_bottom = 40.0
 grow_horizontal = 0
 
-[node name="Sprite2D" type="Sprite2D" parent="Control/HBoxContainer"]
-texture = ExtResource("1_u7n8c")
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+max_value = 200.0
