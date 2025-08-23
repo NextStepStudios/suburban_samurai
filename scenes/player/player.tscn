@@ -1,6 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://dmrvve361rhyr"]
 
 [ext_resource type="Script" uid="uid://dqfmv4ywgc817" path="res://scripts/player/player.gd" id="1_8afob"]
+
 [ext_resource type="Texture2D" uid="uid://bu7mfrygc1ljy" path="res://assets/player/animations/Sammy Idle/SamIdle00.png" id="2_bbmj2"]
 [ext_resource type="Texture2D" uid="uid://dwvp5dd88vccx" path="res://assets/player/animations/Sammy Idle/SamIdle01.png" id="3_kxw46"]
 [ext_resource type="Texture2D" uid="uid://dwgnbyqhh10a1" path="res://assets/player/animations/Sammy Idle/SamIdle02.png" id="4_8qxvo"]
