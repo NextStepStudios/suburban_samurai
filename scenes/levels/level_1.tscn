@@ -1,4 +1,5 @@
-[gd_scene load_steps=10 format=3 uid="uid://ojkmf7w047nc"]
+
+[gd_scene load_steps=9 format=3 uid="uid://ojkmf7w047nc"]
 
 [ext_resource type="Texture2D" uid="uid://dmpe5beulmxra" path="res://assets/environment/background/suburban-samurai_Background.png" id="1_6761a"]
 [ext_resource type="Texture2D" uid="uid://ct6amsh2mfne1" path="res://assets/environment/background/suburban-samurai_CloudsBuildings.png" id="2_sk5k4"]
@@ -8,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://g1jgcawmb1u7" path="res://assets/environment/tileset/suburban-samurai_Obstacles1.png" id="6_sk5k4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxy0u"]
-texture = ExtResource("5_dga24")
 texture_region_size = Vector2i(36, 36)
 0:11/0 = 0
 0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
