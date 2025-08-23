@@ -83,8 +83,13 @@ func chase_state(delta):
 	velocity.x = direction_to_player.x * speed * 3 # chase a bit faster
 
 	# standard sprite flip and walk logic
+<<<<<<< Updated upstream
 	animated_sprite.flip_h = velocity.x < 0
 	animated_sprite.play("walk")
+=======
+	animated_sprite.flip_h = velocity.x > 0
+	animated_sprite.play("Attack")
+>>>>>>> Stashed changes
 	move_and_slide()
 
 
