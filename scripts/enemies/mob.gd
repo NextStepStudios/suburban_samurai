@@ -10,11 +10,15 @@ var player = null # hold ref to Nico's player lol
 # ready nodes
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var ground_check_ray = $RayCast2D
+@onready var sfx_player = $SFXPlayer
 
 # vars
 var speed = 50 # walk speed
 var direction: float # init only
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+# file paths
+const NINJA_SOUND = preload("res://assets/audio/enemies/ninja/ninja_sound.mp3")
 
 func _ready():
 	# randi() % 2 gives us either 0 or 1, perfect 50/50 chance
@@ -45,7 +49,7 @@ func patrol_state(delta):
 	velocity.x = direction * speed
 
 	# flip_h true if -1 (left), false if 1 (right, default)
-	animated_sprite.flip_h = direction < 0
+	animated_sprite.flip_h = direction > 0
 	
 	# stateless raycast flip
 	# set ray's direction based on the 'direction' variable every frame
@@ -80,10 +84,10 @@ func chase_state(delta):
 		direction = -1 # left
 		
 	# apply velocity vector with chase speed boost
-	velocity.x = direction_to_player.x * speed * 3 # chase a bit faster
+	velocity.x = direction_to_player.x * speed * 4 # chase a bit faster
 
 	# standard sprite flip and walk logic
-	animated_sprite.flip_h = velocity.x < 0
+	animated_sprite.flip_h = velocity.x > 0
 	animated_sprite.play("walk")
 	move_and_slide()
 
@@ -93,3 +97,6 @@ func _on_player_detector_body_entered(body: Node2D) -> void:
 		print("ENEMY: Entered Aggro State") # debug
 		state = CHASE # set mob to hunt the player
 		player = body # the body it chases is the player
+		
+		sfx_player.stream = NINJA_SOUND # set SFX
+		sfx_player.play() # play SFX
