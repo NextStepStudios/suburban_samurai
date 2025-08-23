@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://da34ykxeuhkda"]
+[gd_scene load_steps=11 format=3 uid="uid://cx20gqys2vvcf"]
 
 [ext_resource type="Texture2D" uid="uid://bksmdcpwgg0mg" path="res://assets/environment/background/suburban-samurai_Background.png" id="1_bchdt"]
 [ext_resource type="Texture2D" uid="uid://c6iqu6qphv08l" path="res://assets/environment/background/suburban-samurai_CloudsBuildings.png" id="2_8uj7q"]
@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://b6t0pptxun05s" path="res://assets/environment/background/suburban-samurai_Foreground.png" id="4_gojx4"]
 [ext_resource type="Texture2D" uid="uid://cfvfbth7eo88k" path="res://assets/environment/tileset/suburban-samurai_Obstacles1.png" id="5_pm0mm"]
 [ext_resource type="PackedScene" uid="uid://bcs6k44re5r4" path="res://scenes/enemies/mob.tscn" id="6_8uj7q"]
+[ext_resource type="PackedScene" uid="uid://dmrvve361rhyr" path="res://scenes/player/player.tscn" id="7_gojx4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qxy0u"]
+texture = ExtResource("5_pm0mm")
 texture_region_size = Vector2i(36, 36)
 0:11/0 = 0
 0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -596,3 +598,6 @@ layer_0/tile_data = PackedInt32Array(851968, 1, 13, 851969, 65537, 13, 851970, 1
 
 [node name="Mob" parent="." instance=ExtResource("6_8uj7q")]
 position = Vector2(582, 88)
+
+[node name="Player" parent="." instance=ExtResource("7_gojx4")]
+position = Vector2(165, 277)
