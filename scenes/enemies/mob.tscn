@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://bcs6k44re5r4"]
+[gd_scene load_steps=100 format=3 uid="uid://bcs6k44re5r4"]
 
 [ext_resource type="Script" uid="uid://bf06ckb7jbrtp" path="res://scripts/enemies/mob.gd" id="1_pq5na"]
 [ext_resource type="Texture2D" uid="uid://cx62l4t0tsel1" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack00.png" id="2_hk4ju"]
@@ -402,6 +402,8 @@ size = Vector2(274, 447)
 [sub_resource type="CircleShape2D" id="CircleShape2D_hk4ju"]
 radius = 621.82
 
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_hk4ju"]
+
 [node name="Mob" type="CharacterBody2D" groups=["enemies"]]
 scale = Vector2(0.3, 0.3)
 collision_mask = 2
@@ -409,8 +411,7 @@ script = ExtResource("1_pq5na")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_nk7ob")
-animation = &"Idle"
-frame_progress = 0.561674
+animation = &"Attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_hk4ju")
@@ -431,5 +432,8 @@ shape = SubResource("RectangleShape2D_hk4ju")
 shape = SubResource("CircleShape2D_hk4ju")
 
 [node name="DeathTimer" type="Timer" parent="."]
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMP3_hk4ju")
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_player_detector_body_entered"]

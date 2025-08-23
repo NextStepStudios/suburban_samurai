@@ -19,6 +19,7 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 GameEvents="*res://game_events.gd"
+GameAudio="*res://scenes/Sound/game_audio.tscn"
 
 [dotnet]
 
