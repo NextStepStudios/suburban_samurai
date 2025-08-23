@@ -1,0 +1,422 @@
+[gd_scene load_steps=98 format=3 uid="uid://bcs6k44re5r4"]
+
+[ext_resource type="Script" uid="uid://bf06ckb7jbrtp" path="res://scripts/enemies/mob.gd" id="1_pq5na"]
+[ext_resource type="Texture2D" uid="uid://biplya3mtgyru" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack00.png" id="2_hk4ju"]
+[ext_resource type="Texture2D" uid="uid://dal0a4j3hxidu" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack01.png" id="3_8hbk8"]
+[ext_resource type="Texture2D" uid="uid://bgpe2h74tvw6q" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack02.png" id="4_hd35b"]
+[ext_resource type="Texture2D" uid="uid://blk3jjlyyeg5" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack03.png" id="5_rq2r0"]
+[ext_resource type="Texture2D" uid="uid://ca4vgil1uyu6c" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack04.png" id="6_j1s02"]
+[ext_resource type="Texture2D" uid="uid://ce3dwrkbssqwv" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack05.png" id="7_oy6gn"]
+[ext_resource type="Texture2D" uid="uid://bxcr3rao3jjte" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack06.png" id="8_t3u6h"]
+[ext_resource type="Texture2D" uid="uid://reiwsajeu8l7" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack07.png" id="9_mr74q"]
+[ext_resource type="Texture2D" uid="uid://c4ffll7fx120t" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack08.png" id="10_1m5aw"]
+[ext_resource type="Texture2D" uid="uid://dwhyjiyrr46dn" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack09.png" id="11_j26vu"]
+[ext_resource type="Texture2D" uid="uid://dnpc3qo7unlca" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack10.png" id="12_ta4nh"]
+[ext_resource type="Texture2D" uid="uid://dyrt8mc3gt4wa" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack11.png" id="13_nr3yy"]
+[ext_resource type="Texture2D" uid="uid://dyc08g7sn1pdg" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack12.png" id="14_r2jhj"]
+[ext_resource type="Texture2D" uid="uid://cc44njjvvpqi1" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack13.png" id="15_a8q2q"]
+[ext_resource type="Texture2D" uid="uid://cnl634vrrksuf" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack14.png" id="16_p2dl2"]
+[ext_resource type="Texture2D" uid="uid://di1ajdltnecgl" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack15.png" id="17_8e2kk"]
+[ext_resource type="Texture2D" uid="uid://bxqgveq5056is" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack16.png" id="18_dfw1d"]
+[ext_resource type="Texture2D" uid="uid://b3ohq07j13mcl" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack17.png" id="19_s5585"]
+[ext_resource type="Texture2D" uid="uid://brki7u2463k8g" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack18.png" id="20_r3qar"]
+[ext_resource type="Texture2D" uid="uid://cypoc22qt6msi" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack19.png" id="21_jj2my"]
+[ext_resource type="Texture2D" uid="uid://wfti88pc0mfp" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack20.png" id="22_8w0an"]
+[ext_resource type="Texture2D" uid="uid://d4mlenuxx4uxw" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack21.png" id="23_tow63"]
+[ext_resource type="Texture2D" uid="uid://bjtamjmb3dp5n" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack22.png" id="24_no4e0"]
+[ext_resource type="Texture2D" uid="uid://xsoy1hqrs21p" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie00.png" id="25_rbmxh"]
+[ext_resource type="Texture2D" uid="uid://c6rhfgkk0naoq" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie01.png" id="26_wmw8g"]
+[ext_resource type="Texture2D" uid="uid://bxd215l30txrc" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie02.png" id="27_c5eyi"]
+[ext_resource type="Texture2D" uid="uid://cvqx3o3s4o6q6" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie03.png" id="28_831d6"]
+[ext_resource type="Texture2D" uid="uid://dboidexcm1f52" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie04.png" id="29_4hbx6"]
+[ext_resource type="Texture2D" uid="uid://j8osdjimm4i2" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie05.png" id="30_1wlat"]
+[ext_resource type="Texture2D" uid="uid://bke4arg1i8wsm" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie06.png" id="31_6n6mw"]
+[ext_resource type="Texture2D" uid="uid://bq4w2taiv4amr" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie07.png" id="32_ujt0h"]
+[ext_resource type="Texture2D" uid="uid://dogpdhwxxu0ew" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie08.png" id="33_rp4sb"]
+[ext_resource type="Texture2D" uid="uid://bejmvnucw55k7" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie09.png" id="34_63aak"]
+[ext_resource type="Texture2D" uid="uid://cevw8jpbwa0dt" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie10.png" id="35_m0bx7"]
+[ext_resource type="Texture2D" uid="uid://dyngnisgitu8g" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie11.png" id="36_18v0f"]
+[ext_resource type="Texture2D" uid="uid://16wfuvofaket" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie12.png" id="37_2vq2p"]
+[ext_resource type="Texture2D" uid="uid://boqo8bml0068r" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie13.png" id="38_nrt0k"]
+[ext_resource type="Texture2D" uid="uid://clp8v4u03nak4" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie14.png" id="39_t2t6p"]
+[ext_resource type="Texture2D" uid="uid://dl271xc22t56e" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie15.png" id="40_c5vnr"]
+[ext_resource type="Texture2D" uid="uid://lbx4imx24cvl" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie16.png" id="41_cg3vc"]
+[ext_resource type="Texture2D" uid="uid://h4ra164pee1d" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie17.png" id="42_bk7vp"]
+[ext_resource type="Texture2D" uid="uid://bwktgen6gykq8" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie18.png" id="43_ybnqr"]
+[ext_resource type="Texture2D" uid="uid://bwyjgggeglgt7" path="res://assets/enemies/ninja/animations/Ninja Die/NinjaDie19.png" id="44_b8iw7"]
+[ext_resource type="Texture2D" uid="uid://c34o0iiwvavf1" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle00.png" id="45_xnlji"]
+[ext_resource type="Texture2D" uid="uid://ckaglnwp3hrbi" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle01.png" id="46_qblwq"]
+[ext_resource type="Texture2D" uid="uid://crj184or1urxn" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle02.png" id="47_kggdr"]
+[ext_resource type="Texture2D" uid="uid://wlxrckajeeq4" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle03.png" id="48_icd7u"]
+[ext_resource type="Texture2D" uid="uid://c7tbgeytx60mb" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle04.png" id="49_r3o0r"]
+[ext_resource type="Texture2D" uid="uid://cw7iajxl41bth" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle05.png" id="50_htb4h"]
+[ext_resource type="Texture2D" uid="uid://bvug68j8li3lq" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle06.png" id="51_5a3h0"]
+[ext_resource type="Texture2D" uid="uid://loh01qogyoed" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle07.png" id="52_ajlpg"]
+[ext_resource type="Texture2D" uid="uid://c5ivn77806w2c" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle08.png" id="53_bcybv"]
+[ext_resource type="Texture2D" uid="uid://l3qd30idke5a" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle09.png" id="54_ye55j"]
+[ext_resource type="Texture2D" uid="uid://bqiq1shsur21i" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle10.png" id="55_qbrws"]
+[ext_resource type="Texture2D" uid="uid://b1jjn8yahm83s" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle11.png" id="56_qdnud"]
+[ext_resource type="Texture2D" uid="uid://bknb42kdwefa" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle12.png" id="57_n8ngi"]
+[ext_resource type="Texture2D" uid="uid://bbe7281w7wta0" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle13.png" id="58_6tc67"]
+[ext_resource type="Texture2D" uid="uid://b53ghvftyoo6c" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle14.png" id="59_h8cau"]
+[ext_resource type="Texture2D" uid="uid://j2nna7g0xfu1" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle15.png" id="60_mj1rm"]
+[ext_resource type="Texture2D" uid="uid://cpf61x373fvmb" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle16.png" id="61_wrnty"]
+[ext_resource type="Texture2D" uid="uid://cbm44doc20oy" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle17.png" id="62_2cyiu"]
+[ext_resource type="Texture2D" uid="uid://vrlmobunuhst" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle18.png" id="63_heomb"]
+[ext_resource type="Texture2D" uid="uid://cco8hy2u7jlhp" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle19.png" id="64_xl24s"]
+[ext_resource type="Texture2D" uid="uid://cq1nocrddk5vc" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle20.png" id="65_xgdp3"]
+[ext_resource type="Texture2D" uid="uid://cenoj4tfyyv4d" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle21.png" id="66_8tur2"]
+[ext_resource type="Texture2D" uid="uid://darfym67t72t0" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle22.png" id="67_jjg2a"]
+[ext_resource type="Texture2D" uid="uid://c7qjelife8sid" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle23.png" id="68_wdm5j"]
+[ext_resource type="Texture2D" uid="uid://dov2c14kcwoxn" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle24.png" id="69_yymd3"]
+[ext_resource type="Texture2D" uid="uid://xg5ec6rtibut" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle25.png" id="70_bes8v"]
+[ext_resource type="Texture2D" uid="uid://d1w4qs5x102ft" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle26.png" id="71_ya5h4"]
+[ext_resource type="Texture2D" uid="uid://bqcdw3plylv2j" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle27.png" id="72_x2iyk"]
+[ext_resource type="Texture2D" uid="uid://3xtyujqd8x88" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle28.png" id="73_htleh"]
+[ext_resource type="Texture2D" uid="uid://w4nuweugm1ys" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle29.png" id="74_0t6v6"]
+[ext_resource type="Texture2D" uid="uid://kx73lmi8067c" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle30.png" id="75_n02r6"]
+[ext_resource type="Texture2D" uid="uid://yk747ro0no3v" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle31.png" id="76_d8ad5"]
+[ext_resource type="Texture2D" uid="uid://dykdnqpchrd3a" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle32.png" id="77_shlf6"]
+[ext_resource type="Texture2D" uid="uid://qp2qxjfwnjrl" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle33.png" id="78_qypic"]
+[ext_resource type="Texture2D" uid="uid://e3sydsfcxsb6" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle34.png" id="79_8kueh"]
+[ext_resource type="Texture2D" uid="uid://c6jq5h6epq5vk" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle35.png" id="80_6inkt"]
+[ext_resource type="Texture2D" uid="uid://b6qwh71vw84rc" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle36.png" id="81_v1a73"]
+[ext_resource type="Texture2D" uid="uid://c2nvw7dpgwy7g" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle37.png" id="82_qim6x"]
+[ext_resource type="Texture2D" uid="uid://dcrj2ibpdo36c" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle38.png" id="83_monml"]
+[ext_resource type="Texture2D" uid="uid://cs7kmr8p3kxhn" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle39.png" id="84_ki7im"]
+[ext_resource type="Texture2D" uid="uid://carqf64grfj7x" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle40.png" id="85_0qrr7"]
+[ext_resource type="Texture2D" uid="uid://bo2rycs0mgheq" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle41.png" id="86_1cpgg"]
+[ext_resource type="Texture2D" uid="uid://b1x7xjbqjempd" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle42.png" id="87_xux82"]
+[ext_resource type="Texture2D" uid="uid://vuqt3sme6xec" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle43.png" id="88_lsa14"]
+[ext_resource type="Texture2D" uid="uid://b8e2n7nqbccnq" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle44.png" id="89_wyre4"]
+[ext_resource type="Texture2D" uid="uid://kl80six250lx" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle45.png" id="90_8scp1"]
+[ext_resource type="Texture2D" uid="uid://bpr30xsdyg314" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle46.png" id="91_n2sn5"]
+[ext_resource type="Texture2D" uid="uid://sxfj6e213f" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle47.png" id="92_2y6np"]
+[ext_resource type="Texture2D" uid="uid://dorrmi2vpdyg" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle48.png" id="93_jepdi"]
+[ext_resource type="Texture2D" uid="uid://ienadptwyfjh" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle49.png" id="94_db0d1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nk7ob"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hk4ju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8hbk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hd35b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rq2r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_j1s02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oy6gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t3u6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mr74q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1m5aw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_j26vu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ta4nh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nr3yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r2jhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a8q2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_p2dl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8e2kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dfw1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s5585")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r3qar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jj2my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8w0an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_tow63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_no4e0")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_rbmxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_wmw8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_c5eyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_831d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4hbx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_1wlat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6n6mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ujt0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_rp4sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_63aak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_m0bx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_18v0f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_2vq2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_nrt0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_t2t6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_c5vnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_cg3vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_bk7vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ybnqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_b8iw7")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("45_xnlji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_qblwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_kggdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_icd7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_r3o0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_htb4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5a3h0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ajlpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_bcybv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_ye55j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_qbrws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_qdnud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_n8ngi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_6tc67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_h8cau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_mj1rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_wrnty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_2cyiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_heomb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_xl24s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xgdp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_8tur2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_jjg2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_wdm5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_yymd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_bes8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_ya5h4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_x2iyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_htleh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_0t6v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_n02r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_d8ad5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_shlf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_qypic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_8kueh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_6inkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_v1a73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_qim6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_monml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ki7im")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_0qrr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_1cpgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_xux82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_lsa14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_wyre4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_8scp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_n2sn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_2y6np")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_jepdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_db0d1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 25.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hk4ju"]
+radius = 137.0
+height = 448.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hk4ju"]
+size = Vector2(274, 447)
+
+[node name="Mob" type="CharacterBody2D" groups=["enemies"]]
+script = ExtResource("1_pq5na")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_nk7ob")
+animation = &"Idle"
+frame_progress = 0.023572
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_hk4ju")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 300)
+
+[node name="SideDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SideDetector"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_hk4ju")
+
+[node name="DeathTimer" type="Timer" parent="."]

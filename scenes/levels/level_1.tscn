@@ -1,4 +1,6 @@
+
 [gd_scene load_steps=10 format=3 uid="uid://ojkmf7w047nc"]
+
 
 [ext_resource type="Texture2D" uid="uid://dmpe5beulmxra" path="res://assets/environment/background/suburban-samurai_Background.png" id="1_6761a"]
 [ext_resource type="Texture2D" uid="uid://ct6amsh2mfne1" path="res://assets/environment/background/suburban-samurai_CloudsBuildings.png" id="2_sk5k4"]
