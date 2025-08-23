@@ -3,11 +3,13 @@ extends Node
 
 # global signals
 @warning_ignore("unused_signal") # ignore warning
-signal deal_dmg_to_player(dmg)
+signal deal_dmg_to_player(dmg) # player takes damage
 @warning_ignore("unused_signal") # ignore warning
-signal health_change_player(new_hp)
+signal health_change_player(new_hp) # player gets ui hp update
 @warning_ignore("unused_signal") # ignore warning
-signal player_died
+signal player_died # player dies
+@warning_ignore("unused_signal")
+signal level_finished # triggers level switch
 
 # global vars
 var current_score: int = 0
@@ -15,7 +17,7 @@ var current_health: int = 0
 
 # global constants
 # player
-# TODO: add global player consts
+const PLAYER_MAX_HP: int = 6
 
 # enemy
-const ENEMY_NINJA_HP: int = 1
+const ENEMY_MAX_HP: int = 6
