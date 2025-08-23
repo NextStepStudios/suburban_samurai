@@ -2,9 +2,6 @@
 # Cache and import data, can be rebuilt automatically
 .godot/
 
-# Art
-Character/
-Tileset/
 
 # Any files imported from the editor, such as *.scn.import or *.png.import
 *.import
