@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcs6k44re5r4"]
+
+[ext_resource type="Script" uid="uid://cmibed77cnioc" path="res://scripts/enemies/ninja.gd" id="1_nk7ob"]
+[ext_resource type="Texture2D" uid="uid://bhrm0bd64pchs" path="res://assets/icon.svg" id="1_yhh4g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nk7ob"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yhh4g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Ninja" type="CharacterBody2D"]
+script = ExtResource("1_nk7ob")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_nk7ob")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
