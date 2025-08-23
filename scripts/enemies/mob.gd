@@ -91,6 +91,8 @@ func chase_state(delta):
 	animated_sprite.flip_h = velocity.x > 0
 	animated_sprite.play("Attack")
 	move_and_slide()
+	
+	#Delete dit later
 
 
 func _on_player_detector_body_entered(body: Node2D) -> void:
