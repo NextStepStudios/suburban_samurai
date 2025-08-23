@@ -16,6 +16,10 @@ run/main_scene="uid://b0q76b5vywllg"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+GameEvents="*res://game_events.gd"
+
 [dotnet]
 
 project/assembly_name="Suburban Samurai"

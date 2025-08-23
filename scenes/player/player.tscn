@@ -1,6 +1,7 @@
 [gd_scene load_steps=118 format=3 uid="uid://dmrvve361rhyr"]
 
 [ext_resource type="Script" uid="uid://dqfmv4ywgc817" path="res://scripts/player/player.gd" id="1_8afob"]
+
 [ext_resource type="Texture2D" uid="uid://bu7mfrygc1ljy" path="res://assets/player/animations/Sammy Idle/SamIdle00.png" id="2_bbmj2"]
 [ext_resource type="Texture2D" uid="uid://cp8dfh851hbvh" path="res://assets/player/animations/Sammy Short Attack/SamSattack00.png" id="2_hf5gj"]
 [ext_resource type="Texture2D" uid="uid://c803f5l77iwbo" path="res://assets/player/animations/Sammy Short Attack/SamSattack01.png" id="3_avmva"]
@@ -115,6 +116,7 @@
 [ext_resource type="Texture2D" uid="uid://csgcxrsttn2sr" path="res://assets/player/animations/Sammy Run/SamRun19.png" id="113_48o5h"]
 [ext_resource type="Texture2D" uid="uid://dgniytfqyd3i" path="res://assets/player/animations/Sammy Run/SamRun20.png" id="114_xum3i"]
 [ext_resource type="Texture2D" uid="uid://ce3vjajja7nfp" path="res://assets/player/animations/Sammy Run/SamRun21.png" id="115_ct4wv"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gmlin"]
 animations = [{
