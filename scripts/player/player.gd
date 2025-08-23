@@ -2,8 +2,12 @@
 
 extends CharacterBody2D
 
-@onready var anim_player: AnimatedSprite2D = $AnimatedSprite2D
 
+@onready var hitbox: Area2D = $hitbox
+
+@onready var anim_player: AnimatedSprite2D = $AnimatedSprite2D
+#contants for health
+const HEALTH_LAYER: float = 100.0
 
 # Constants for movement
 const SPEED: int = 300
@@ -16,7 +20,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta: float) -> void:
 	
-	
+	hitbox.monitoring = false
 	#Movement code
 	var direction = Input.get_axis("left", "right")
 	if direction:
@@ -32,34 +36,45 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 	
 	#play animation logic
-	if is_on_floor():
-		if direction  == 0:
-			anim_player.play("idle")
-		else:
-			anim_player.play("run")
+	if attacking:
+			anim_player.play("attack1")
 	else:
-		if Input.is_action_pressed("jump"):
-			anim_player.play("jump")
+		if is_on_floor():
+			if direction  == 0:
+				anim_player.play("idle")
+			else:
+				anim_player.play("run")
+		else:
+			if Input.is_action_pressed("jump"):
+				anim_player.play("jump")
 	
 	# Flip sprite on movement
 	if direction > 0:
 		anim_player.flip_h =  false
 	elif direction < 0:
 		anim_player.flip_h = true
+		
 
 	if Input.is_action_pressed("attack"):
 		_is_attacking()
-		if attacking:
-			anim_player.play("attack1")
-			move_and_slide()
+		
+	move_and_slide()
+	
 		
 		#await get_tree().create_timer(0.5).timeout
 		#attacking = false
 
-	move_and_slide()
+
+
 func _is_attacking():
 	attacking = true
+	hitbox.monitoring = true
+	await get_tree().create_timer(0.8).timeout
+	hitbox.monitoring = false
+	attacking = false
+
 	
 
-func _on_animated_sprite_2d_animation_finished() -> void:
-	attacking = false 
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

@@ -1,7 +1,6 @@
-[gd_scene load_steps=118 format=3 uid="uid://dmrvve361rhyr"]
+[gd_scene load_steps=119 format=3 uid="uid://dmrvve361rhyr"]
 
 [ext_resource type="Script" uid="uid://dqfmv4ywgc817" path="res://scripts/player/player.gd" id="1_8afob"]
-
 [ext_resource type="Texture2D" uid="uid://bu7mfrygc1ljy" path="res://assets/player/animations/Sammy Idle/SamIdle00.png" id="2_bbmj2"]
 [ext_resource type="Texture2D" uid="uid://cp8dfh851hbvh" path="res://assets/player/animations/Sammy Short Attack/SamSattack00.png" id="2_hf5gj"]
 [ext_resource type="Texture2D" uid="uid://c803f5l77iwbo" path="res://assets/player/animations/Sammy Short Attack/SamSattack01.png" id="3_avmva"]
@@ -116,7 +115,6 @@
 [ext_resource type="Texture2D" uid="uid://csgcxrsttn2sr" path="res://assets/player/animations/Sammy Run/SamRun19.png" id="113_48o5h"]
 [ext_resource type="Texture2D" uid="uid://dgniytfqyd3i" path="res://assets/player/animations/Sammy Run/SamRun20.png" id="114_xum3i"]
 [ext_resource type="Texture2D" uid="uid://ce3vjajja7nfp" path="res://assets/player/animations/Sammy Run/SamRun21.png" id="115_ct4wv"]
-
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gmlin"]
 animations = [{
@@ -487,15 +485,16 @@ animations = [{
 radius = 72.0
 height = 326.0
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_0epl4"]
+radius = 17.142
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_8afob")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -219)
 sprite_frames = SubResource("SpriteFrames_gmlin")
 animation = &"idle"
-frame = 33
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -171)
@@ -504,4 +503,15 @@ shape = SubResource("CapsuleShape2D_8lfxt")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(266, -318)
 
+[node name="hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(-10, -172)
+scale = Vector2(16.1107, 16.1107)
+shape = SubResource("CircleShape2D_0epl4")
+disabled = true
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
