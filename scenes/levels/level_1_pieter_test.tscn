@@ -887,8 +887,14 @@ layer_0/tile_data = PackedInt32Array(851968, 1, 13, 851969, 65537, 13, 851970, 1
 =======
 
 [node name="Mob" parent="." instance=ExtResource("6_8uj7q")]
-position = Vector2(582, 88)
+position = Vector2(625, 390)
+scale = Vector2(0.263974, 0.263974)
 
 [node name="Player" parent="." instance=ExtResource("7_gojx4")]
+<<<<<<< HEAD
+position = Vector2(244, 430)
+scale = Vector2(0.274826, 0.274826)
+=======
 position = Vector2(165, 277)
 >>>>>>> master
+>>>>>>> fecaa174d33221ca9bdfdbbc94e77f8e0016a2e2
