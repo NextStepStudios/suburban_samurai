@@ -1,26 +1,46 @@
-[gd_scene load_steps=38 format=3 uid="uid://dmrvve361rhyr"]
+[gd_scene load_steps=118 format=3 uid="uid://dmrvve361rhyr"]
 
 [ext_resource type="Script" uid="uid://dqfmv4ywgc817" path="res://scripts/player/player.gd" id="1_8afob"]
 [ext_resource type="Texture2D" uid="uid://bu7mfrygc1ljy" path="res://assets/player/animations/Sammy Idle/SamIdle00.png" id="2_bbmj2"]
+[ext_resource type="Texture2D" uid="uid://cp8dfh851hbvh" path="res://assets/player/animations/Sammy Short Attack/SamSattack00.png" id="2_hf5gj"]
+[ext_resource type="Texture2D" uid="uid://c803f5l77iwbo" path="res://assets/player/animations/Sammy Short Attack/SamSattack01.png" id="3_avmva"]
 [ext_resource type="Texture2D" uid="uid://dwvp5dd88vccx" path="res://assets/player/animations/Sammy Idle/SamIdle01.png" id="3_kxw46"]
+[ext_resource type="Texture2D" uid="uid://cjfvcoeix5ttc" path="res://assets/player/animations/Sammy Short Attack/SamSattack02.png" id="4_0ioy2"]
 [ext_resource type="Texture2D" uid="uid://dwgnbyqhh10a1" path="res://assets/player/animations/Sammy Idle/SamIdle02.png" id="4_8qxvo"]
 [ext_resource type="Texture2D" uid="uid://bxjcgh7i8g4v3" path="res://assets/player/animations/Sammy Idle/SamIdle03.png" id="5_5q8fn"]
+[ext_resource type="Texture2D" uid="uid://dnmomu7rgaj4v" path="res://assets/player/animations/Sammy Short Attack/SamSattack03.png" id="5_vlhku"]
+[ext_resource type="Texture2D" uid="uid://1dwq3ivah3j2" path="res://assets/player/animations/Sammy Short Attack/SamSattack04.png" id="6_ws0t6"]
 [ext_resource type="Texture2D" uid="uid://bkvde8hcej6d0" path="res://assets/player/animations/Sammy Idle/SamIdle04.png" id="6_wva7c"]
 [ext_resource type="Texture2D" uid="uid://cwvlj22ul6w6o" path="res://assets/player/animations/Sammy Idle/SamIdle05.png" id="7_7obkq"]
+[ext_resource type="Texture2D" uid="uid://clsuv86bhh58y" path="res://assets/player/animations/Sammy Short Attack/SamSattack05.png" id="7_i6ap2"]
+[ext_resource type="Texture2D" uid="uid://6phttr7sby8q" path="res://assets/player/animations/Sammy Short Attack/SamSattack06.png" id="8_88c1f"]
 [ext_resource type="Texture2D" uid="uid://dsjlv7o6t7uy3" path="res://assets/player/animations/Sammy Idle/SamIdle06.png" id="8_vo27k"]
 [ext_resource type="Texture2D" uid="uid://cqm3gjw7f27fh" path="res://assets/player/animations/Sammy Idle/SamIdle07.png" id="9_genst"]
+[ext_resource type="Texture2D" uid="uid://move1if2js7p" path="res://assets/player/animations/Sammy Short Attack/SamSattack07.png" id="9_hdu4s"]
+[ext_resource type="Texture2D" uid="uid://cndey53wu1rti" path="res://assets/player/animations/Sammy Short Attack/SamSattack08.png" id="10_0wr6q"]
 [ext_resource type="Texture2D" uid="uid://b0xrhvnf5w1yq" path="res://assets/player/animations/Sammy Idle/SamIdle08.png" id="10_niom3"]
+[ext_resource type="Texture2D" uid="uid://8lacvhk4iqk8" path="res://assets/player/animations/Sammy Short Attack/SamSattack09.png" id="11_p0anf"]
 [ext_resource type="Texture2D" uid="uid://cufruxqsbpeak" path="res://assets/player/animations/Sammy Idle/SamIdle09.png" id="11_ttakn"]
+[ext_resource type="Texture2D" uid="uid://beg2vtp5ankw4" path="res://assets/player/animations/Sammy Short Attack/SamSattack10.png" id="12_lhgc7"]
 [ext_resource type="Texture2D" uid="uid://csyt87elhm5jr" path="res://assets/player/animations/Sammy Idle/SamIdle10.png" id="12_rw8a5"]
 [ext_resource type="Texture2D" uid="uid://bhtd56rr1pau6" path="res://assets/player/animations/Sammy Idle/SamIdle11.png" id="13_iwuka"]
+[ext_resource type="Texture2D" uid="uid://ds75im67nhsuk" path="res://assets/player/animations/Sammy Short Attack/SamSattack11.png" id="13_vy876"]
+[ext_resource type="Texture2D" uid="uid://di5gi65amwrxn" path="res://assets/player/animations/Sammy Short Attack/SamSattack12.png" id="14_0vtlm"]
 [ext_resource type="Texture2D" uid="uid://berfilkchqeh1" path="res://assets/player/animations/Sammy Idle/SamIdle12.png" id="14_hyqqp"]
+[ext_resource type="Texture2D" uid="uid://wohfpjdic4ra" path="res://assets/player/animations/Sammy Short Attack/SamSattack13.png" id="15_drv02"]
 [ext_resource type="Texture2D" uid="uid://d4abuu25a1n1d" path="res://assets/player/animations/Sammy Idle/SamIdle13.png" id="15_ds1xl"]
 [ext_resource type="Texture2D" uid="uid://j1dlft0vuxp4" path="res://assets/player/animations/Sammy Idle/SamIdle14.png" id="16_1u1sw"]
+[ext_resource type="Texture2D" uid="uid://deq1jgd1de51w" path="res://assets/player/animations/Sammy Short Attack/SamSattack14.png" id="16_tmafg"]
+[ext_resource type="Texture2D" uid="uid://2iufalkjf4wf" path="res://assets/player/animations/Sammy Short Attack/SamSattack15.png" id="17_2enr6"]
 [ext_resource type="Texture2D" uid="uid://c2g8ceevbnusv" path="res://assets/player/animations/Sammy Idle/SamIdle15.png" id="17_2t3bg"]
 [ext_resource type="Texture2D" uid="uid://c10siukhta8lp" path="res://assets/player/animations/Sammy Idle/SamIdle16.png" id="18_jrbya"]
+[ext_resource type="Texture2D" uid="uid://dpgj835tcvm6t" path="res://assets/player/animations/Sammy Short Attack/SamSattack16.png" id="18_qxlpa"]
 [ext_resource type="Texture2D" uid="uid://cbehtxb8ptfyh" path="res://assets/player/animations/Sammy Idle/SamIdle17.png" id="19_ahqnk"]
+[ext_resource type="Texture2D" uid="uid://cb2xtip38uiif" path="res://assets/player/animations/Sammy Short Attack/SamSattack17.png" id="19_iwd08"]
+[ext_resource type="Texture2D" uid="uid://df37g4hreg4hn" path="res://assets/player/animations/Sammy Short Attack/SamSattack18.png" id="20_5oeuk"]
 [ext_resource type="Texture2D" uid="uid://bcx2q2v3y65y" path="res://assets/player/animations/Sammy Idle/SamIdle18.png" id="20_vb1ce"]
 [ext_resource type="Texture2D" uid="uid://s34l3vkw6adw" path="res://assets/player/animations/Sammy Idle/SamIdle19.png" id="21_0ncpa"]
+[ext_resource type="Texture2D" uid="uid://bahmrkiixo6wd" path="res://assets/player/animations/Sammy Short Attack/SamSattack19.png" id="21_oq5hk"]
 [ext_resource type="Texture2D" uid="uid://c3c7tcs6lgxtm" path="res://assets/player/animations/Sammy Idle/SamIdle20.png" id="22_upxxc"]
 [ext_resource type="Texture2D" uid="uid://cwljsqdnd7cu4" path="res://assets/player/animations/Sammy Idle/SamIdle21.png" id="23_ln3h3"]
 [ext_resource type="Texture2D" uid="uid://bg0jmweach2o3" path="res://assets/player/animations/Sammy Idle/SamIdle22.png" id="24_uygh0"]
@@ -35,9 +55,134 @@
 [ext_resource type="Texture2D" uid="uid://bvdj23h8ydua" path="res://assets/player/animations/Sammy Idle/SamIdle31.png" id="33_3chqh"]
 [ext_resource type="Texture2D" uid="uid://bo2qaa2vwuae" path="res://assets/player/animations/Sammy Idle/SamIdle32.png" id="34_pwfqx"]
 [ext_resource type="Texture2D" uid="uid://clrm0np48em7m" path="res://assets/player/animations/Sammy Idle/SamIdle33.png" id="35_kssj8"]
+[ext_resource type="Texture2D" uid="uid://cm2p6d5s2d4x6" path="res://assets/player/animations/Sammy Jump/SamJump00.png" id="56_kfile"]
+[ext_resource type="Texture2D" uid="uid://w8ag0uvp4njg" path="res://assets/player/animations/Sammy Jump/SamJump01.png" id="57_pkjeu"]
+[ext_resource type="Texture2D" uid="uid://boh8rkxl28bdx" path="res://assets/player/animations/Sammy Jump/SamJump02.png" id="58_0epl4"]
+[ext_resource type="Texture2D" uid="uid://dnxxx6n4hval2" path="res://assets/player/animations/Sammy Jump/SamJump03.png" id="59_3r8w6"]
+[ext_resource type="Texture2D" uid="uid://1600mhdw5th1" path="res://assets/player/animations/Sammy Jump/SamJump04.png" id="60_i816j"]
+[ext_resource type="Texture2D" uid="uid://dbqg7iwkvjnyh" path="res://assets/player/animations/Sammy Jump/SamJump05.png" id="61_laqvq"]
+[ext_resource type="Texture2D" uid="uid://betql0uje2qyx" path="res://assets/player/animations/Sammy Jump/SamJump06.png" id="62_aq51r"]
+[ext_resource type="Texture2D" uid="uid://c5cyqxs62n2gr" path="res://assets/player/animations/Sammy Jump/SamJump07.png" id="63_q3ejk"]
+[ext_resource type="Texture2D" uid="uid://cq3jfx2p0rjdy" path="res://assets/player/animations/Sammy Jump/SamJump08.png" id="64_2dxln"]
+[ext_resource type="Texture2D" uid="uid://js7t4ki4qt81" path="res://assets/player/animations/Sammy Jump/SamJump09.png" id="65_gsldg"]
+[ext_resource type="Texture2D" uid="uid://qf1pwmugtcdq" path="res://assets/player/animations/Sammy Jump/SamJump10.png" id="66_rrrpt"]
+[ext_resource type="Texture2D" uid="uid://dr1a6f27d8jan" path="res://assets/player/animations/Sammy Jump/SamJump11.png" id="67_us45u"]
+[ext_resource type="Texture2D" uid="uid://cvgoyqak7x1l3" path="res://assets/player/animations/Sammy Jump/SamJump12.png" id="68_wvv85"]
+[ext_resource type="Texture2D" uid="uid://d2rr7dasqrawm" path="res://assets/player/animations/Sammy Jump/SamJump13.png" id="69_hxu4r"]
+[ext_resource type="Texture2D" uid="uid://xvsr76shb257" path="res://assets/player/animations/Sammy Jump/SamJump14.png" id="70_i6dto"]
+[ext_resource type="Texture2D" uid="uid://bitkaw0j5flou" path="res://assets/player/animations/Sammy Jump/SamJump15.png" id="71_4d8j4"]
+[ext_resource type="Texture2D" uid="uid://bmx8oapbec4ju" path="res://assets/player/animations/Sammy Jump/SamJump16.png" id="72_s27sh"]
+[ext_resource type="Texture2D" uid="uid://eh7ji3ca5pa2" path="res://assets/player/animations/Sammy Jump/SamJump17.png" id="73_1vi86"]
+[ext_resource type="Texture2D" uid="uid://cdh6stuqb00w7" path="res://assets/player/animations/Sammy Jump/SamJump18.png" id="74_beayq"]
+[ext_resource type="Texture2D" uid="uid://bto8dq60rmcp7" path="res://assets/player/animations/Sammy Jump/SamJump19.png" id="75_12j61"]
+[ext_resource type="Texture2D" uid="uid://dvgth3e7vsag" path="res://assets/player/animations/Sammy Jump/SamJump20.png" id="76_kthys"]
+[ext_resource type="Texture2D" uid="uid://8eunepf1epit" path="res://assets/player/animations/Sammy Jump/SamJump21.png" id="77_48o5h"]
+[ext_resource type="Texture2D" uid="uid://d0ur0twshwjps" path="res://assets/player/animations/Sammy Jump/SamJump22.png" id="78_xum3i"]
+[ext_resource type="Texture2D" uid="uid://df4ihs0573o2o" path="res://assets/player/animations/Sammy Jump/SamJump23.png" id="79_ct4wv"]
+[ext_resource type="Texture2D" uid="uid://dr5chgj5vowob" path="res://assets/player/animations/Sammy Jump/SamJump24.png" id="80_teg5g"]
+[ext_resource type="Texture2D" uid="uid://qwh5hq0eqt" path="res://assets/player/animations/Sammy Jump/SamJump25.png" id="81_vcxk4"]
+[ext_resource type="Texture2D" uid="uid://nemsan8hwhmt" path="res://assets/player/animations/Sammy Jump/SamJump26.png" id="82_x6bw1"]
+[ext_resource type="Texture2D" uid="uid://cira4impcbady" path="res://assets/player/animations/Sammy Jump/SamJump27.png" id="83_e1bru"]
+[ext_resource type="Texture2D" uid="uid://ci40fir5enit7" path="res://assets/player/animations/Sammy Jump/SamJump28.png" id="84_63x2c"]
+[ext_resource type="Texture2D" uid="uid://dgc8sdo1246qa" path="res://assets/player/animations/Sammy Jump/SamJump29.png" id="85_arxfr"]
+[ext_resource type="Texture2D" uid="uid://bc8fofolb1qft" path="res://assets/player/animations/Sammy Jump/SamJump30.png" id="86_5ecds"]
+[ext_resource type="Texture2D" uid="uid://de1ff7kfntkdy" path="res://assets/player/animations/Sammy Jump/SamJump31.png" id="87_nssm8"]
+[ext_resource type="Texture2D" uid="uid://cno1qxo6eiuly" path="res://assets/player/animations/Sammy Jump/SamJump32.png" id="88_ei0bd"]
+[ext_resource type="Texture2D" uid="uid://bb4rnid5nyv3a" path="res://assets/player/animations/Sammy Jump/SamJump33.png" id="89_wwa77"]
+[ext_resource type="Texture2D" uid="uid://dwdcwcdairf3r" path="res://assets/player/animations/Sammy Jump/SamJump34.png" id="90_tdwly"]
+[ext_resource type="Texture2D" uid="uid://5vdtxqjp66ms" path="res://assets/player/animations/Sammy Jump/SamJump35.png" id="91_fmlco"]
+[ext_resource type="Texture2D" uid="uid://ddmojbrse0s8f" path="res://assets/player/animations/Sammy Jump/SamJump36.png" id="92_duoik"]
+[ext_resource type="Texture2D" uid="uid://y5pxntjg2w1" path="res://assets/player/animations/Sammy Jump/SamJump37.png" id="93_6qclm"]
+[ext_resource type="Texture2D" uid="uid://bykmdvld77shc" path="res://assets/player/animations/Sammy Run/SamRun00.png" id="94_0epl4"]
+[ext_resource type="Texture2D" uid="uid://dykqpvgauek0l" path="res://assets/player/animations/Sammy Run/SamRun01.png" id="95_3r8w6"]
+[ext_resource type="Texture2D" uid="uid://bi67apjho55ex" path="res://assets/player/animations/Sammy Run/SamRun02.png" id="96_i816j"]
+[ext_resource type="Texture2D" uid="uid://biny8yuvhm2p5" path="res://assets/player/animations/Sammy Run/SamRun03.png" id="97_laqvq"]
+[ext_resource type="Texture2D" uid="uid://dls4dknh8vg6y" path="res://assets/player/animations/Sammy Run/SamRun04.png" id="98_aq51r"]
+[ext_resource type="Texture2D" uid="uid://bi0ktp7y0xxc0" path="res://assets/player/animations/Sammy Run/SamRun05.png" id="99_q3ejk"]
+[ext_resource type="Texture2D" uid="uid://x821ev4wgeor" path="res://assets/player/animations/Sammy Run/SamRun06.png" id="100_2dxln"]
+[ext_resource type="Texture2D" uid="uid://8b1ek8lxcm73" path="res://assets/player/animations/Sammy Run/SamRun07.png" id="101_gsldg"]
+[ext_resource type="Texture2D" uid="uid://bj1oqnsfbiglu" path="res://assets/player/animations/Sammy Run/SamRun08.png" id="102_rrrpt"]
+[ext_resource type="Texture2D" uid="uid://doq27gad662ji" path="res://assets/player/animations/Sammy Run/SamRun09.png" id="103_us45u"]
+[ext_resource type="Texture2D" uid="uid://beqvir0y7brxn" path="res://assets/player/animations/Sammy Run/SamRun10.png" id="104_wvv85"]
+[ext_resource type="Texture2D" uid="uid://cf2ocpg84268e" path="res://assets/player/animations/Sammy Run/SamRun11.png" id="105_hxu4r"]
+[ext_resource type="Texture2D" uid="uid://dv8f2madfxy8f" path="res://assets/player/animations/Sammy Run/SamRun12.png" id="106_i6dto"]
+[ext_resource type="Texture2D" uid="uid://bfeglc4q44b1c" path="res://assets/player/animations/Sammy Run/SamRun13.png" id="107_4d8j4"]
+[ext_resource type="Texture2D" uid="uid://c6e428vqw7tdu" path="res://assets/player/animations/Sammy Run/SamRun14.png" id="108_s27sh"]
+[ext_resource type="Texture2D" uid="uid://ct3kbogi6dynp" path="res://assets/player/animations/Sammy Run/SamRun15.png" id="109_1vi86"]
+[ext_resource type="Texture2D" uid="uid://ch2m63g3p88c8" path="res://assets/player/animations/Sammy Run/SamRun16.png" id="110_beayq"]
+[ext_resource type="Texture2D" uid="uid://deqnp5j84nuev" path="res://assets/player/animations/Sammy Run/SamRun17.png" id="111_12j61"]
+[ext_resource type="Texture2D" uid="uid://b5kwu35cxi47k" path="res://assets/player/animations/Sammy Run/SamRun18.png" id="112_kthys"]
+[ext_resource type="Texture2D" uid="uid://csgcxrsttn2sr" path="res://assets/player/animations/Sammy Run/SamRun19.png" id="113_48o5h"]
+[ext_resource type="Texture2D" uid="uid://dgniytfqyd3i" path="res://assets/player/animations/Sammy Run/SamRun20.png" id="114_xum3i"]
+[ext_resource type="Texture2D" uid="uid://ce3vjajja7nfp" path="res://assets/player/animations/Sammy Run/SamRun21.png" id="115_ct4wv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gmlin"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hf5gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_avmva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0ioy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vlhku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ws0t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i6ap2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_88c1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hdu4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0wr6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p0anf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lhgc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vy876")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0vtlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_drv02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tmafg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2enr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qxlpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_iwd08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5oeuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_oq5hk")
+}],
+"loop": true,
+"name": &"attack1",
+"speed": 25.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_bbmj2")
@@ -141,9 +286,199 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("35_kssj8")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
-"speed": 5.0
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_kfile")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_pkjeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_0epl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_3r8w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_i816j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_laqvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_aq51r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_q3ejk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_2dxln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_gsldg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_rrrpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_us45u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_wvv85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_hxu4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_i6dto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_4d8j4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_s27sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_1vi86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_beayq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_12j61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_kthys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_48o5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_xum3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_ct4wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_teg5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_vcxk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_x6bw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_e1bru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_63x2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_arxfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_5ecds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_nssm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_ei0bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_wwa77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_tdwly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_fmlco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_duoik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_6qclm")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("94_0epl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_3r8w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_i816j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_laqvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_aq51r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_q3ejk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_2dxln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_gsldg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_rrrpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_us45u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_wvv85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_hxu4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_i6dto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_4d8j4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_s27sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_1vi86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_beayq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_12j61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_kthys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_48o5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_xum3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_ct4wv")
+}],
+"loop": true,
+"name": &"run",
+"speed": 25.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8lfxt"]
@@ -157,7 +492,14 @@ script = ExtResource("1_8afob")
 position = Vector2(0, -219)
 sprite_frames = SubResource("SpriteFrames_gmlin")
 animation = &"idle"
+frame = 33
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -171)
 shape = SubResource("CapsuleShape2D_8lfxt")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(266, -318)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
