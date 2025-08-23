@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=10 format=3 uid="uid://da34ykxeuhkda"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://dhwmwyamiywfl"]
+>>>>>>> master
 
 [ext_resource type="Texture2D" uid="uid://bksmdcpwgg0mg" path="res://assets/environment/background/suburban-samurai_Background.png" id="1_bchdt"]
 [ext_resource type="Texture2D" uid="uid://c6iqu6qphv08l" path="res://assets/environment/background/suburban-samurai_CloudsBuildings.png" id="2_8uj7q"]
