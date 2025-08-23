@@ -86,3 +86,10 @@ func chase_state(delta):
 	animated_sprite.flip_h = velocity.x < 0
 	animated_sprite.play("walk")
 	move_and_slide()
+
+
+func _on_player_detector_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		print("ENEMY: Entered Aggro State") # debug
+		state = CHASE # set mob to hunt the player
+		player = body # the body it chases is the player
