@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx1jwfs0cqsjh"]
+
+[ext_resource type="AudioStream" uid="uid://bb1xuekenolbm" path="res://assets/Audio/Music/Level Theme/Level_Theme.mp3" id="1_3dr5u"]
+
+[node name="Game Audio" type="AudioStreamPlayer"]
+stream = ExtResource("1_3dr5u")
+autoplay = true
