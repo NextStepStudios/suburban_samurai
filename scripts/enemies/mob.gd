@@ -87,8 +87,9 @@ func chase_state(delta):
 	velocity.x = direction_to_player.x * speed * 4 # chase a bit faster
 
 	# standard sprite flip and walk logic
+
 	animated_sprite.flip_h = velocity.x > 0
-	animated_sprite.play("walk")
+	animated_sprite.play("Attack")
 	move_and_slide()
 
 
