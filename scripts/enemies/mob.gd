@@ -151,9 +151,12 @@ func hit(knockback_dir: Vector2, damage):
 		state = DIE
 	
 func die(delta):
-	$CollisionShape2D.disabled
+	velocity.x = 0
+	$CollisionShape2D.disabled = true
 	animated_sprite.play("Die")
+	await animated_sprite.animation_finished
+	animated_sprite.frame = animated_sprite.sprite_frames.get_frame_count("attack") - 1
 	move_and_slide()
-	await get_tree().create_timer(1.5).timeout
+	await get_tree().create_timer(1.2).timeout
 	queue_free()
 	
