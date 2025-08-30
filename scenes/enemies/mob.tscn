@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://bcs6k44re5r4"]
+[gd_scene load_steps=111 format=3 uid="uid://bcs6k44re5r4"]
 
 [ext_resource type="Script" uid="uid://bf06ckb7jbrtp" path="res://scripts/enemies/mob.gd" id="1_pq5na"]
 [ext_resource type="Texture2D" uid="uid://cx62l4t0tsel1" path="res://assets/enemies/ninja/animations/Ninja Attack/NinjaAttack00.png" id="2_hk4ju"]
@@ -94,6 +94,17 @@
 [ext_resource type="Texture2D" uid="uid://eojilelitmma" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle47.png" id="92_2y6np"]
 [ext_resource type="Texture2D" uid="uid://dyj3xiuvjote0" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle48.png" id="93_jepdi"]
 [ext_resource type="Texture2D" uid="uid://bpwlutmxsw1ly" path="res://assets/enemies/ninja/animations/NinjaIdle/NinjaIdle49.png" id="94_db0d1"]
+[ext_resource type="Texture2D" uid="uid://djxgxqo1wgkem" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt00.png" id="95_nr3yy"]
+[ext_resource type="Texture2D" uid="uid://cjtmdmli4rodq" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt01.png" id="96_r2jhj"]
+[ext_resource type="Texture2D" uid="uid://w8o3u1bhh08j" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt02.png" id="97_a8q2q"]
+[ext_resource type="Texture2D" uid="uid://byaafp3kkdprd" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt03.png" id="98_p2dl2"]
+[ext_resource type="Texture2D" uid="uid://d3ah3sg0181h1" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt04.png" id="99_8e2kk"]
+[ext_resource type="Texture2D" uid="uid://bpo3h7kgap2nm" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt05.png" id="100_dfw1d"]
+[ext_resource type="Texture2D" uid="uid://ctplygjm3tbk0" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt06.png" id="101_s5585"]
+[ext_resource type="Texture2D" uid="uid://blybbl434kf0q" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt07.png" id="102_r3qar"]
+[ext_resource type="Texture2D" uid="uid://h0jpbylrs4hd" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt08.png" id="103_jj2my"]
+[ext_resource type="Texture2D" uid="uid://cabquw6r2wun3" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt09.png" id="104_8w0an"]
+[ext_resource type="Texture2D" uid="uid://dc7vp2pf2l4gv" path="res://assets/enemies/ninja/animations/Ninja Hurt/NinjaHurt10.png" id="105_tow63"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nk7ob"]
 animations = [{
@@ -390,6 +401,44 @@ animations = [{
 "loop": true,
 "name": &"Idle",
 "speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("95_nr3yy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_r2jhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_a8q2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_p2dl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_8e2kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_dfw1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_s5585")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_r3qar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_jj2my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_8w0an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_tow63")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 25.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hk4ju"]
@@ -405,15 +454,20 @@ radius = 621.82
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_hk4ju"]
 
 [node name="Mob" type="CharacterBody2D" groups=["enemies"]]
-scale = Vector2(0.3, 0.3)
-collision_mask = 2
+scale = Vector2(0.242033, 0.242033)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_pq5na")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_as_relative = false
+scale = Vector2(0.995577, 0.995577)
 sprite_frames = SubResource("SpriteFrames_nk7ob")
-animation = &"Attack"
+animation = &"Die"
+frame = 19
+frame_progress = 1.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["enemies"]]
 shape = SubResource("CapsuleShape2D_hk4ju")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
@@ -427,6 +481,8 @@ position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_hk4ju")
 
 [node name="PlayerDetector" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector"]
 shape = SubResource("CircleShape2D_hk4ju")

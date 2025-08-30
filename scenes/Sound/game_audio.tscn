@@ -4,5 +4,6 @@
 
 [node name="Game Audio" type="AudioStreamPlayer"]
 stream = ExtResource("1_3dr5u")
+volume_db = -32.18
 autoplay = true
 parameters/looping = true

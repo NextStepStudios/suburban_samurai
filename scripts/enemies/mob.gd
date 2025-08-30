@@ -3,7 +3,7 @@
 extends CharacterBody2D
 
 # state machine enums
-enum {PATROL, CHASE}
+enum {PATROL, CHASE, HURT, DIE}
 var state = PATROL # init
 var player = null # hold ref to Nico's player lol
 
@@ -16,6 +16,12 @@ var player = null # hold ref to Nico's player lol
 var speed = 50 # walk speed
 var direction: float # init only
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var knockback_decay: float = 10.0  # higher = faster stop
+var knockback_velocity: Vector2 = Vector2.ZERO
+var knockback_strength: float = 200.0
+var hurt_time: float = 0.4
+var hurt_timer: float = 0.0
+var health = 100
 
 # file paths
 const NINJA_SOUND = preload("res://assets/audio/enemies/ninja/ninja_sound.mp3")
@@ -34,6 +40,10 @@ func _physics_process(delta):
 			patrol_state(delta)
 		CHASE:
 			chase_state(delta)
+		HURT:
+			hurt(delta)
+		DIE:
+			die(delta)
 
 # mob movement (old _physics_process func)
 func patrol_state(delta):
@@ -60,6 +70,7 @@ func patrol_state(delta):
 		
 	animated_sprite.play("Idle") # walk animation
 	move_and_slide() # godots magic func for sliding on floor
+	
 
 # mob chase state
 func chase_state(delta):
@@ -92,6 +103,26 @@ func chase_state(delta):
 	animated_sprite.play("Attack")
 	move_and_slide()
 
+func hurt (delta):
+	
+	animated_sprite.play("hurt")
+	# Apply gravity if not grounded
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	
+	# Apply knockback
+	velocity.x = knockback_velocity.x
+	velocity.y = knockback_velocity.y
+	
+	# Decay knockback smoothly
+	knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, knockback_decay * delta)
+	
+	
+	# Countdown hurt duration
+	hurt_timer -= delta
+	if hurt_timer <= 0.0:
+		state = CHASE
+	move_and_slide()
 
 func _on_player_detector_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
@@ -101,3 +132,28 @@ func _on_player_detector_body_entered(body: Node2D) -> void:
 		
 		sfx_player.stream = NINJA_SOUND # set SFX
 		sfx_player.play() # play SFX
+		
+		
+func hit(knockback_dir: Vector2, damage):
+	# Called by the player when hit
+	health -= damage
+	if health > 0:
+		state = HURT
+		hurt_timer = hurt_time
+	# only take horizontal direction
+		var dir_x = sign(knockback_dir.x)
+		if dir_x == 0:
+			dir_x = 1 # fallback if same x position as player
+
+		knockback_velocity = Vector2(dir_x * knockback_strength, -20) 
+	# ↑ gives horizontal push + small upward bump
+	else:
+		state = DIE
+	
+func die(delta):
+	$CollisionShape2D.disabled
+	animated_sprite.play("Die")
+	move_and_slide()
+	await get_tree().create_timer(1.5).timeout
+	queue_free()
+	

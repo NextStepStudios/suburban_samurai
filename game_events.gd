@@ -10,11 +10,15 @@ signal health_change_player(new_hp) # player gets ui hp update
 signal player_died # player dies
 @warning_ignore("unused_signal")
 signal level_finished # triggers level switch
+@warning_ignore("unused_signal")
+signal deal_dmg_to_mob(dmg)
+@warning_ignore("unused_signal")
+signal health_change_mob(new_hp)
 
 # global vars
 var current_score: int = 0
-var current_health: int = 0
-
+var current_health: int = PLAYER_MAX_HP
+var current_enemy_health = ENEMY_MAX_HP
 # global constants
 # player
 const PLAYER_MAX_HP: int = 6

@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=3 uid="uid://dmrvve361rhyr"]
+[gd_scene load_steps=148 format=3 uid="uid://dmrvve361rhyr"]
 
 [ext_resource type="Script" uid="uid://dqfmv4ywgc817" path="res://scripts/player/player.gd" id="1_8afob"]
 [ext_resource type="Texture2D" uid="uid://dehj7qmquy0bl" path="res://assets/player/animations/Sammy Idle/SamIdle00.png" id="2_bbmj2"]
@@ -41,20 +41,44 @@
 [ext_resource type="Texture2D" uid="uid://s0xxkvgk1hbu" path="res://assets/player/animations/Sammy Idle/SamIdle18.png" id="20_vb1ce"]
 [ext_resource type="Texture2D" uid="uid://7aa2swaiyn6l" path="res://assets/player/animations/Sammy Idle/SamIdle19.png" id="21_0ncpa"]
 [ext_resource type="Texture2D" uid="uid://b8dq8deegrd3d" path="res://assets/player/animations/Sammy Short Attack/SamSattack19.png" id="21_oq5hk"]
+[ext_resource type="Texture2D" uid="uid://dsw2paygt0m3a" path="res://assets/player/animations/Sammy Attack/SamAttack00.png" id="22_e1bru"]
 [ext_resource type="Texture2D" uid="uid://kwote71uubej" path="res://assets/player/animations/Sammy Idle/SamIdle20.png" id="22_upxxc"]
+[ext_resource type="Texture2D" uid="uid://bolf2n7iq5at2" path="res://assets/player/animations/Sammy Attack/SamAttack01.png" id="23_63x2c"]
 [ext_resource type="Texture2D" uid="uid://d2n27h54je3yp" path="res://assets/player/animations/Sammy Idle/SamIdle21.png" id="23_ln3h3"]
+[ext_resource type="Texture2D" uid="uid://p81kc7dign8k" path="res://assets/player/animations/Sammy Attack/SamAttack02.png" id="24_arxfr"]
 [ext_resource type="Texture2D" uid="uid://cn8ai88mhf2kg" path="res://assets/player/animations/Sammy Idle/SamIdle22.png" id="24_uygh0"]
+[ext_resource type="Texture2D" uid="uid://cxjsn0exj0tue" path="res://assets/player/animations/Sammy Attack/SamAttack03.png" id="25_5ecds"]
 [ext_resource type="Texture2D" uid="uid://my0i71rwav4b" path="res://assets/player/animations/Sammy Idle/SamIdle23.png" id="25_t1aof"]
+[ext_resource type="Texture2D" uid="uid://c6krgr1b68obm" path="res://assets/player/animations/Sammy Attack/SamAttack04.png" id="26_nssm8"]
 [ext_resource type="Texture2D" uid="uid://bofmbw7m6nk3m" path="res://assets/player/animations/Sammy Idle/SamIdle24.png" id="26_w8qe1"]
+[ext_resource type="Texture2D" uid="uid://blfkk3i1uy7n5" path="res://assets/player/animations/Sammy Attack/SamAttack05.png" id="27_ei0bd"]
 [ext_resource type="Texture2D" uid="uid://bajf1ij250dxq" path="res://assets/player/animations/Sammy Idle/SamIdle25.png" id="27_hdvrm"]
 [ext_resource type="Texture2D" uid="uid://dl36gm0b6jihs" path="res://assets/player/animations/Sammy Idle/SamIdle26.png" id="28_5xbmr"]
+[ext_resource type="Texture2D" uid="uid://gwwbs20pt16j" path="res://assets/player/animations/Sammy Attack/SamAttack06.png" id="28_wwa77"]
 [ext_resource type="Texture2D" uid="uid://bcskojqrheiui" path="res://assets/player/animations/Sammy Idle/SamIdle27.png" id="29_hir57"]
+[ext_resource type="Texture2D" uid="uid://40pjefgdd1dr" path="res://assets/player/animations/Sammy Attack/SamAttack07.png" id="29_tdwly"]
 [ext_resource type="Texture2D" uid="uid://b1jperh7l01ix" path="res://assets/player/animations/Sammy Idle/SamIdle28.png" id="30_7072n"]
+[ext_resource type="Texture2D" uid="uid://chmaxn82k868r" path="res://assets/player/animations/Sammy Attack/SamAttack08.png" id="30_fmlco"]
+[ext_resource type="Texture2D" uid="uid://bg4di7gbsqq7f" path="res://assets/player/animations/Sammy Attack/SamAttack09.png" id="31_duoik"]
 [ext_resource type="Texture2D" uid="uid://c2aeyjnyn8t78" path="res://assets/player/animations/Sammy Idle/SamIdle29.png" id="31_gmu8b"]
+[ext_resource type="Texture2D" uid="uid://buxblh7f6godw" path="res://assets/player/animations/Sammy Attack/SamAttack10.png" id="32_6qclm"]
 [ext_resource type="Texture2D" uid="uid://7j3qn22wh5vp" path="res://assets/player/animations/Sammy Idle/SamIdle30.png" id="32_a38bk"]
 [ext_resource type="Texture2D" uid="uid://bo5jo0novfori" path="res://assets/player/animations/Sammy Idle/SamIdle31.png" id="33_3chqh"]
+[ext_resource type="Texture2D" uid="uid://qj0alfowuy0j" path="res://assets/player/animations/Sammy Attack/SamAttack11.png" id="33_mtkxs"]
 [ext_resource type="Texture2D" uid="uid://dn8mtivu22s2d" path="res://assets/player/animations/Sammy Idle/SamIdle32.png" id="34_pwfqx"]
+[ext_resource type="Texture2D" uid="uid://2rk70ff32xmu" path="res://assets/player/animations/Sammy Attack/SamAttack12.png" id="34_pxyg8"]
 [ext_resource type="Texture2D" uid="uid://1jo3to7qgyuo" path="res://assets/player/animations/Sammy Idle/SamIdle33.png" id="35_kssj8"]
+[ext_resource type="Texture2D" uid="uid://bl282vhwr7mh4" path="res://assets/player/animations/Sammy Attack/SamAttack13.png" id="35_xm1em"]
+[ext_resource type="Texture2D" uid="uid://cnkt4o5vu82wt" path="res://assets/player/animations/Sammy Attack/SamAttack14.png" id="36_6ix8p"]
+[ext_resource type="Texture2D" uid="uid://b7fjcyfv53h4j" path="res://assets/player/animations/Sammy Attack/SamAttack15.png" id="37_fntve"]
+[ext_resource type="Texture2D" uid="uid://bo17tr8topnm2" path="res://assets/player/animations/Sammy Attack/SamAttack16.png" id="38_a2vma"]
+[ext_resource type="Texture2D" uid="uid://o6h4ghxeexmy" path="res://assets/player/animations/Sammy Attack/SamAttack17.png" id="39_b63cp"]
+[ext_resource type="Texture2D" uid="uid://y27ojcu582ls" path="res://assets/player/animations/Sammy Attack/SamAttack18.png" id="40_l2ov3"]
+[ext_resource type="Texture2D" uid="uid://c7o5feiqwkj7u" path="res://assets/player/animations/Sammy Attack/SamAttack19.png" id="41_gdxup"]
+[ext_resource type="Texture2D" uid="uid://bidyrwy5kmddk" path="res://assets/player/animations/Sammy Attack/SamAttack20.png" id="42_vbe6q"]
+[ext_resource type="Texture2D" uid="uid://dolr647062exs" path="res://assets/player/animations/Sammy Attack/SamAttack21.png" id="43_xkbl4"]
+[ext_resource type="Texture2D" uid="uid://bttetn2lligmn" path="res://assets/player/animations/Sammy Attack/SamAttack22.png" id="44_xfllp"]
+[ext_resource type="Texture2D" uid="uid://dn3qjflcopml1" path="res://assets/player/animations/Sammy Attack/SamAttack23.png" id="45_qr5dr"]
 [ext_resource type="Texture2D" uid="uid://bobbrj27xw3rr" path="res://assets/player/animations/Sammy Jump/SamJump00.png" id="56_kfile"]
 [ext_resource type="Texture2D" uid="uid://250r5hj3stip" path="res://assets/player/animations/Sammy Jump/SamJump01.png" id="57_pkjeu"]
 [ext_resource type="Texture2D" uid="uid://cbbq4n3jjk24l" path="res://assets/player/animations/Sammy Jump/SamJump02.png" id="58_0epl4"]
@@ -115,6 +139,7 @@
 [ext_resource type="Texture2D" uid="uid://cb6erv44r3pkx" path="res://assets/player/animations/Sammy Run/SamRun19.png" id="113_48o5h"]
 [ext_resource type="Texture2D" uid="uid://d0jjxs8oa6kiv" path="res://assets/player/animations/Sammy Run/SamRun20.png" id="114_xum3i"]
 [ext_resource type="Texture2D" uid="uid://dn6k6oiwmahsm" path="res://assets/player/animations/Sammy Run/SamRun21.png" id="115_ct4wv"]
+[ext_resource type="PackedScene" uid="uid://dj82yrib8y7rm" path="res://progress_and_buttons.tscn" id="116_3r8w6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gmlin"]
 animations = [{
@@ -181,7 +206,89 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack1",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_e1bru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_63x2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_arxfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5ecds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_nssm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ei0bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_wwa77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tdwly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fmlco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_duoik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_6qclm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_mtkxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_pxyg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_xm1em")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_6ix8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_fntve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_a2vma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_b63cp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_l2ov3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_gdxup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_vbe6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_xkbl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_xfllp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_qr5dr")
+}],
+"loop": false,
+"name": &"attack2",
 "speed": 25.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"dash",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -488,6 +595,168 @@ height = 326.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_0epl4"]
 radius = 17.142
 
+[sub_resource type="Animation" id="Animation_i816j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hitbox/CollisionShape2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, -330)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hitbox:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"attack1"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimatedSprite2D:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [18]
+}
+
+[sub_resource type="Animation" id="Animation_3r8w6"]
+resource_name = "attack"
+length = 0.68
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.5, 0.533333, 0.566667, 0.6, 0.6333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hitbox/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.400847, 0.528736, 0.566667, 0.603179, 0.6333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(100, -330), Vector2(173.333, -256.667), Vector2(226.667, -220), Vector2(150, -170), Vector2(150, -170)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.6, 0.633333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimatedSprite2D:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"attack1"]
+}
+
+[sub_resource type="Animation" id="Animation_2t0dv"]
+resource_name = "attack2"
+length = 0.667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.0333333, 0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [18, 1, 2, 3, 4, 6, 7, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"attack2"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hitbox:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.366667, 0.566667, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("hitbox/CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.366667, 0.466667, 0.566667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(100, -330), Vector2(56.6667, -130), Vector2(213.333, -220), Vector2(230, -250)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_laqvq"]
+_data = {
+&"RESET": SubResource("Animation_i816j"),
+&"attack": SubResource("Animation_3r8w6"),
+&"attack2": SubResource("Animation_2t0dv")
+}
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_8afob")
@@ -495,7 +764,8 @@ script = ExtResource("1_8afob")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -219)
 sprite_frames = SubResource("SpriteFrames_gmlin")
-animation = &"idle"
+animation = &"attack1"
+frame = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -171)
@@ -503,18 +773,27 @@ shape = SubResource("CapsuleShape2D_8lfxt")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(266, -318)
+limit_bottom = 600
 limit_smoothed = true
 rotation_smoothing_enabled = true
 
 [node name="hitbox" type="Area2D" parent="."]
-collision_layer = 0
+collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
-position = Vector2(-10, -172)
-scale = Vector2(16.1107, 16.1107)
+position = Vector2(100, -330)
+scale = Vector2(5.13164, 5.13164)
 shape = SubResource("CircleShape2D_0epl4")
-disabled = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("116_3r8w6")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_laqvq")
+}
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
