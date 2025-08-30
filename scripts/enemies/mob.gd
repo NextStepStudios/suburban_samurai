@@ -22,6 +22,7 @@ var knockback_strength: float = 200.0
 var hurt_time: float = 0.4
 var hurt_timer: float = 0.0
 var health = 100
+
 # file paths
 const NINJA_SOUND = preload("res://assets/audio/enemies/ninja/ninja_sound.mp3")
 
