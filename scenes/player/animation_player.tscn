@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dynv815jfvfej"]
+[gd_scene load_steps=5 format=3 uid="uid://dq8s7f1ag4ciw"]
 
 [ext_resource type="Script" uid="uid://b35kyoxi7lj8" path="res://scripts/player/animation_loader.gd" id="1_n1ajs"]
 
