@@ -11,6 +11,9 @@ var player = null # hold ref to Nico's player lol
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var ground_check_ray = $RayCast2D
 @onready var sfx_player = $SFXPlayer
+@onready var health_bar: TextureProgressBar = $TextureProgressBar
+@onready var mob_hitbox: Area2D = $mob_hitbox
+@onready var attack_timer: Timer = $AttackTimer
 
 # vars
 var speed = 50 # walk speed
@@ -21,8 +24,10 @@ var knockback_velocity: Vector2 = Vector2.ZERO
 var knockback_strength: float = 200.0
 var hurt_time: float = 0.4
 var hurt_timer: float = 0.0
-var health = 100
-
+var health: int
+var is_dead: bool = false
+var attack_damage: int = 10
+var can_damage:bool = true
 # file paths
 const NINJA_SOUND = preload("res://assets/audio/enemies/ninja/ninja_sound.mp3")
 
@@ -32,6 +37,8 @@ func _ready():
 		direction = 1.0 # Go right
 	else: # if odd
 		direction = -1.0 # Go le
+	health = 100
+	
 
 func _physics_process(delta):
 	# state machine
@@ -109,11 +116,9 @@ func hurt (delta):
 	# Apply gravity if not grounded
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	
 	# Apply knockback
 	velocity.x = knockback_velocity.x
 	velocity.y = knockback_velocity.y
-	
 	# Decay knockback smoothly
 	knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, knockback_decay * delta)
 	
@@ -137,6 +142,7 @@ func _on_player_detector_body_entered(body: Node2D) -> void:
 func hit(knockback_dir: Vector2, damage):
 	# Called by the player when hit
 	health -= damage
+	health_bar.value = health
 	if health > 0:
 		state = HURT
 		hurt_timer = hurt_time
@@ -151,12 +157,32 @@ func hit(knockback_dir: Vector2, damage):
 		state = DIE
 	
 func die(delta):
+	if is_dead:
+		return   # already dying, don’t repeat
+	is_dead = true
 	velocity.x = 0
 	$CollisionShape2D.disabled = true
 	animated_sprite.play("Die")
-	await animated_sprite.animation_finished
-	animated_sprite.frame = animated_sprite.sprite_frames.get_frame_count("attack") - 1
+	can_damage = false
 	move_and_slide()
-	await get_tree().create_timer(1.2).timeout
+	await get_tree().create_timer(2).timeout
 	queue_free()
 	
+
+
+func _on_mob_hitbox_body_entered(body: Node2D) -> void:
+	print ("mob hitbox")
+	
+	
+	if body.is_in_group("player") and can_damage:
+		can_damage = false
+		attack_timer.start()
+		if body.has_method("player_hit"):
+			var dir = (body.global_position - global_position).normalized()
+			body.player_hit(dir,attack_damage)
+		
+
+
+
+func _on_attack_timer_timeout() -> void:
+	can_damage = true

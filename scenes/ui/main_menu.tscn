@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://b0q76b5vywllg"]
 
 [ext_resource type="Script" uid="uid://dvu47imyqdkp4" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
-[ext_resource type="Texture2D" uid="uid://kkigowna1rv3" path="res://assets/ui/background.png" id="2_q85j6"]
-[ext_resource type="Texture2D" uid="uid://byd2bvvt3dwb1" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=default.svg" id="3_8g5eo"]
-[ext_resource type="Texture2D" uid="uid://byggq5rs2w7vd" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=click.svg" id="4_7suek"]
-[ext_resource type="Texture2D" uid="uid://bumesn5m4iwjx" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=hover.svg" id="5_otr3d"]
-[ext_resource type="Texture2D" uid="uid://dvs6afsfx71gb" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=default.svg" id="6_8ekit"]
-[ext_resource type="Texture2D" uid="uid://b6cqu40630345" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=click.svg" id="7_n4uci"]
-[ext_resource type="Texture2D" uid="uid://b36mbxm0u5n62" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=hover.svg" id="8_877pj"]
-[ext_resource type="Texture2D" uid="uid://v6qdhkmfg1bu" path="res://assets/ui/UI/Assets/Headers/Component=headers, Screen=main.svg" id="9_ayp64"]
+[ext_resource type="Texture2D" uid="uid://4s85vwm54t7y" path="res://assets/ui/background.png" id="2_q85j6"]
+[ext_resource type="Texture2D" uid="uid://b40bny3kq8f80" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=default.svg" id="3_8g5eo"]
+[ext_resource type="Texture2D" uid="uid://deoujiaeridsu" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=click.svg" id="4_7suek"]
+[ext_resource type="Texture2D" uid="uid://bwflemrgt6xl2" path="res://assets/ui/UI/Assets/Buttons/Action=start, State=hover.svg" id="5_otr3d"]
+[ext_resource type="Texture2D" uid="uid://3girtprwk3vv" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=default.svg" id="6_8ekit"]
+[ext_resource type="Texture2D" uid="uid://ce7sialsg1382" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=click.svg" id="7_n4uci"]
+[ext_resource type="Texture2D" uid="uid://cibpcedp4wlus" path="res://assets/ui/UI/Assets/Buttons/Action=quit, State=hover.svg" id="8_877pj"]
+[ext_resource type="Texture2D" uid="uid://boqq7otekvxgo" path="res://assets/ui/UI/Assets/Headers/Component=headers, Screen=main.svg" id="9_ayp64"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -24,51 +24,34 @@ position = Vector2(575, 329.09)
 scale = Vector2(0.843939, 0.843939)
 texture = ExtResource("2_q85j6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -215.5
-offset_top = 155.09
-offset_right = 215.5
-offset_bottom = 265.09
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.878423, 0.878423)
-
 [node name="Component=headers,Screen=main" type="Sprite2D" parent="."]
 position = Vector2(572, 232.09)
 scale = Vector2(0.843939, 0.843939)
 texture = ExtResource("9_ayp64")
 
-[node name="PlayButton" type="TextureButton" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 396.0
+offset_right = 844.0
+offset_bottom = 526.0
+focus_mode = 2
+
+[node name="PlayButton" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
-offset_left = 351.0
-offset_top = 434.0
-offset_right = 782.0
-offset_bottom = 564.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.843939, 0.843939)
+focus_neighbor_right = NodePath("../QuitButton")
 texture_normal = ExtResource("3_8g5eo")
 texture_pressed = ExtResource("4_7suek")
 texture_hover = ExtResource("5_otr3d")
+texture_focused = ExtResource("5_otr3d")
 
-[node name="QuitButton" type="TextureButton" parent="."]
+[node name="QuitButton" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
-offset_left = 610.0
-offset_top = 435.0
-offset_right = 1041.0
-offset_bottom = 565.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.843939, 0.843939)
+focus_neighbor_left = NodePath("../PlayButton")
 texture_normal = ExtResource("6_8ekit")
 texture_pressed = ExtResource("7_n4uci")
 texture_hover = ExtResource("8_877pj")
+texture_focused = ExtResource("8_877pj")
 
-[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
