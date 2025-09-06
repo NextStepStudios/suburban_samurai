@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ojkmf7w047nc"]
+[gd_scene load_steps=13 format=3 uid="uid://ojkmf7w047nc"]
 
 [ext_resource type="Texture2D" uid="uid://1l4eb8nujfx8" path="res://assets/environment/background/suburban-samurai_Background.png" id="1_6761a"]
 [ext_resource type="Texture2D" uid="uid://cttocxj0cg8lh" path="res://assets/environment/background/suburban-samurai_CloudsBuildings.png" id="2_sk5k4"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dmrvve361rhyr" path="res://scenes/player/player.tscn" id="6_oc4kc"]
 [ext_resource type="Texture2D" uid="uid://dxyac6cv4dhix" path="res://assets/environment/tileset/suburban-samurai_Obstacles1.png" id="6_sk5k4"]
 [ext_resource type="PackedScene" uid="uid://bcs6k44re5r4" path="res://scenes/enemies/mob.tscn" id="7_oc4kc"]
+[ext_resource type="PackedScene" uid="uid://dmihgmx5gy3qs" path="res://scenes/enemies/yellow_mob.tscn" id="9_dga24"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oc4kc"]
 texture = ExtResource("6_sk5k4")
@@ -648,75 +649,81 @@ layer_0/tile_data = PackedInt32Array(851991, 851970, 12, 851992, 917506, 12, 851
 position = Vector2(308, 465)
 scale = Vector2(0.317314, 0.317314)
 
-[node name="Mob" parent="." instance=ExtResource("7_oc4kc")]
+[node name="ninja" type="Node" parent="."]
+
+[node name="Mob" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(1538, 430)
 scale = Vector2(0.285332, 0.285332)
 
-[node name="Mob2" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob2" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(2729, 420)
 
-[node name="Mob3" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob3" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(2056, 420)
 
-[node name="Mob4" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob4" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(2318, 429)
 
-[node name="Mob5" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob5" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(3689, 445)
 
-[node name="Mob6" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob6" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(3553, 443)
 
-[node name="Mob7" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob7" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-876, 425)
 
-[node name="Mob8" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob8" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-1388, 423)
 
-[node name="Mob9" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob9" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-2190, 422)
 
-[node name="Mob10" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob10" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-2663, 425)
 
-[node name="Mob11" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob11" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-3444, 425)
 
-[node name="Mob12" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob12" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(4906, 418)
 
-[node name="Mob13" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob13" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(5523, 423)
 
-[node name="Mob14" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob14" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(7146, 425)
 
-[node name="Mob15" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob15" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(7676, 428)
 
-[node name="Mob16" parent="." instance=ExtResource("7_oc4kc")]
-position = Vector2(8623, 262)
-scale = Vector2(0.99134, 0.99134)
-
-[node name="Mob17" parent="." instance=ExtResource("7_oc4kc")]
-position = Vector2(10100, 52)
-scale = Vector2(1.83023, 1.83023)
-
-[node name="Mob18" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob18" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-4024, 428)
 
-[node name="Mob19" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob19" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-4666, 433)
 scale = Vector2(0.166586, 0.166586)
 
-[node name="Mob20" parent="." instance=ExtResource("7_oc4kc")]
+[node name="Mob20" parent="ninja" instance=ExtResource("7_oc4kc")]
 position = Vector2(-5503, 435)
 
-[node name="Mob21" parent="." instance=ExtResource("7_oc4kc")]
-position = Vector2(-6830, -395)
-scale = Vector2(3.80289, 3.80289)
+[node name="Mob21" parent="ninja" instance=ExtResource("7_oc4kc")]
+position = Vector2(-6816, 19)
+scale = Vector2(1.47906, 1.47906)
 
-[node name="Mob22" parent="." instance=ExtResource("7_oc4kc")]
-position = Vector2(6435, -575)
-rotation = 3.13645
-scale = Vector2(-4.6991, -4.6991)
+[node name="yellowninja" type="Node" parent="."]
+
+[node name="yellow_mob" parent="." instance=ExtResource("9_dga24")]
+position = Vector2(685, 388)
+
+[node name="yellow_mob2" parent="." instance=ExtResource("9_dga24")]
+position = Vector2(3141, 419)
+
+[node name="yellow_mob3" parent="." instance=ExtResource("9_dga24")]
+position = Vector2(4253, 387)
+
+[node name="yellow_mob4" parent="." instance=ExtResource("9_dga24")]
+position = Vector2(10443, 383)
+
+[node name="yellow_mob5" parent="." instance=ExtResource("9_dga24")]
+position = Vector2(9556, 387)

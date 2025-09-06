@@ -35,7 +35,8 @@ var dead: bool = false
 
 func _ready():
 	hitbox.monitoring = false
-	health = 100
+	health = 200
+	health_bar.max_value = health
 	health_bar.value = health
 	hitbox_base_offset = hitbox.position  # store initial offset
 
@@ -73,7 +74,7 @@ func floor_state(delta):
 	if attacking:
 		animation_player.play("attack")
 	elif attacking2:
-		animation_player.play("attack2")
+		animation_player.play("test_attack")
 	else:
 		#if is_on_floor():
 			if direction  == 0:
@@ -107,7 +108,11 @@ func floor_state(delta):
 	move_and_slide()
 	
 func air_state(delta):
-	anim_player.play("jump")
+	
+	if attacking:
+		animation_player.play("air_attack")
+	else:
+		anim_player.play("jump")
 	var direction = Input.get_axis("left", "right")
 	#add gravity
 	if  not is_on_floor():
@@ -129,6 +134,10 @@ func air_state(delta):
 		hitbox.scale.x = -1
 	if is_on_floor():
 		state = FLOOR
+		
+	if Input.is_action_just_pressed("attack", true) and not attacking:
+		_is_attacking()
+		
 	move_and_slide()
 
 func hurt_state(delta):
@@ -139,10 +148,13 @@ func hurt_state(delta):
 	knockback_velocity = knockback_velocity.move_toward(Vector2.ZERO, knockback_decay * delta)
 	move_and_slide()
 	
-func die_state(dalta):
+func die_state(delta):
+	if  not is_on_floor():
+		velocity += get_gravity() * delta
 	if not dead:
 		animation_player.play("die")
 		dead = true
+	move_and_slide()
 	
 
 
@@ -183,7 +195,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "attack":
 		attacking = false
 		hitbox.monitoring = false
-	if anim_name == "attack2":
+	if anim_name == "test_attack":
 		attacking2 = false
 		hitbox.monitoring = false
 	if anim_name == "hurt":
@@ -191,6 +203,8 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "die":
 		await get_tree().create_timer(2).timeout
 		get_tree().reload_current_scene()
+	if anim_name == "air_attack":
+		attacking = false
 	
 
 

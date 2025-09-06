@@ -37,7 +37,8 @@ func _ready():
 		direction = 1.0 # Go right
 	else: # if odd
 		direction = -1.0 # Go le
-	health = 100
+	health = 30
+	health_bar.max_value = health
 	
 
 func _physics_process(delta):
