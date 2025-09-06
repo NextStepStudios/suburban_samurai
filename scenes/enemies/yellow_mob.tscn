@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 [gd_scene load_steps=135 format=3 uid="uid://qxfe60t2p5mh"]
 
 [ext_resource type="Script" path="res://yellow_mob.gd" id="1_fshws"]
-=======
-[gd_scene load_steps=135 format=3 uid="uid://dmihgmx5gy3qs"]
-
-[ext_resource type="Script" uid="uid://cx17b6ylysq2w" path="res://yellow_mob.gd" id="1_fshws"]
->>>>>>> 69bdd55ef6dc8b4e694ce0219d32b10551d9ce29
 [ext_resource type="Texture2D" uid="uid://cxwx1aqvcdh0i" path="res://assets/enemies/YNinja/YNinja Die/YNinjaDie00.png" id="2_ra48c"]
 [ext_resource type="Texture2D" uid="uid://vjepj7w03h56" path="res://assets/enemies/YNinja/YNinja Die/YNinjaDie01.png" id="3_74ugd"]
 [ext_resource type="Texture2D" uid="uid://l10cg2bfoenu" path="res://assets/enemies/YNinja/YNinja Die/YNinjaDie02.png" id="4_ga1a0"]
