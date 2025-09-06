@@ -1,9 +1,9 @@
 [gd_scene load_steps=15 format=3 uid="uid://dj82yrib8y7rm"]
 
 [ext_resource type="Script" uid="uid://b74iwbxco2x44" path="res://scripts/player/Control_Animations.gd" id="1_4lcif"]
-[ext_resource type="Texture2D" uid="uid://b1a6f7dlmk03u" path="res://assets/ui/UI/Assets/Health Bar/Icon=no_icon, State=empty.svg" id="2_rq0cc"]
-[ext_resource type="Texture2D" uid="uid://cjik7w6fl4hiq" path="res://assets/ui/UI/Assets/Health Bar/Icon=icon, State=icon.svg" id="3_4d40b"]
-[ext_resource type="Texture2D" uid="uid://bhxksl2fr7k2" path="res://assets/ui/UI/Assets/Health Bar/Icon=no_icon, State=full.svg" id="4_vg0du"]
+[ext_resource type="Texture2D" uid="uid://c3klfjd6j36vp" path="res://assets/ui/UI/Assets/Health Bar/Version 2/Icon=no_icon, State=empty.svg" id="2_yvfjq"]
+[ext_resource type="Texture2D" uid="uid://fx8g7v3kdcd1" path="res://assets/ui/UI/Assets/Health Bar/Version 2/Icon=icon, State=icon.svg" id="3_wdshv"]
+[ext_resource type="Texture2D" uid="uid://bwnbouheedw3n" path="res://assets/ui/UI/Assets/Health Bar/Version 2/Icon=no_icon, State=full.svg" id="4_n3alp"]
 [ext_resource type="Texture2D" uid="uid://dyynh3ud8xu6a" path="res://assets/ui/UI/Assets/Controls/Controller/Property 1=left-joystick.svg" id="5_jkp5i"]
 [ext_resource type="Texture2D" uid="uid://bm1wdurp6ykpv" path="res://assets/ui/UI/Assets/Controls/Controller/Property 1=left-joystick-left.svg" id="6_hard2"]
 [ext_resource type="Texture2D" uid="uid://cjqn7igdbl4co" path="res://assets/ui/UI/Assets/Controls/Controller/Property 1=left-joystick-right.svg" id="7_4tv3j"]
@@ -86,10 +86,10 @@ script = ExtResource("1_4lcif")
 offset_left = 20.0
 offset_top = 20.0
 offset_right = 586.0
-offset_bottom = 79.0
-texture_under = ExtResource("2_rq0cc")
-texture_over = ExtResource("3_4d40b")
-texture_progress = ExtResource("4_vg0du")
+offset_bottom = 87.0
+texture_under = ExtResource("2_yvfjq")
+texture_over = ExtResource("3_wdshv")
+texture_progress = ExtResource("4_n3alp")
 
 [node name="analog" type="AnimatedSprite2D" parent="."]
 position = Vector2(756, 44)
